@@ -18,7 +18,7 @@ final class Controller{
     require_once($this->path.'View.php');
     $view = new View();
 
-    if (isset($this->cmd) && ($this->cmd != "")) {
+    if ($this->cmd != "") {
       if ($this->cmd == 'login') {
         $view->showStartpage();
       }
