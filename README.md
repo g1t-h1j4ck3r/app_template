@@ -1,2 +1,2 @@
 # app_template
-mvc template php apps
+mvc template for PHP apps
