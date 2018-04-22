@@ -14,6 +14,7 @@ final class Controller{
     }
   }
 
+  /*** handle the requests */
   public function handleCmd(){
     require_once($this->path.'View.php');
     $view = new View();
@@ -38,6 +39,7 @@ final class Controller{
     return;
   }
 
+  /*** deletes all session data, start a new one an redirects to the login-page */
   private function unsetSession($view){
     session_unset();
     session_destroy();
